@@ -30,6 +30,6 @@ The purpose of this project is to produce a 2 part Node application that does th
 ## Usage
 * Download the file
 * Once download please enter in the console log 'npm start' to run in
-* It will run on localhost, heroku version is avavilable as well
+* It will run on localhost, heroku version will be avavilable as well
 * After click on the linkedin icon in the menu to retrive the your linkedin profile
 * Enjoy
