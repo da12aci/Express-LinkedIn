@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='stylesheets/style.css' />
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/materialize.css">
+</head>
+<header>
+  <ul id="slide-out" class="side-nav">
+    <li>
+      <div class="userView">
+        <div class="background">
+    </li>
+    <li><a class="subheader">Click on icon to connect linkedin</a></li>
+    <li>
+      <a class="linkedin-top" href="/oauth/linkedin" target="_blank">
+        <img src="images/LinkedIn-45.png" alt="Sign in to Linkedin directly" />
+      </a>
+    </li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a class="waves-effect" href="#linkData"><i class="material-icons">perm_identity</i>Profile</a></li>
+    <li><a class="waves-effect" href="#connData"><i class="material-icons">settings_input_hdmi</i>Connections</a></li>
+    <li><a class="waves-effect" href="#sumData"><i class="material-icons">subject</i>Summary</a></li>
+    <li><a class="waves-effect" href="#posData"><i class="material-icons">info</i>Positions</a></li>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+</header>
+
+<body>
+
+  <div class="parallax-container">
+    <div class="parallax"><img src="images/skyback.png"></div>
+  </div>
+
+  <h1>
+    <%= title %>
+  </h1>
+  <h5>Welcome! Head over to the menu to sign in and load content. Enjoy your New Linkedin CV</h5>
+
+  <br>
+
+  <hr>
+
+  <div id="linkData">
+    <h3><b>Profile - the name, industry, etc</b></h3>
+  </div>
+
+  <hr>
+
+  <div id="connData">
+    <h3><b>Number of connections</b></h3>
+  </div>
+
+  <hr>
+
+  <div id="sumData">
+    <h3><b>Summary of myself</b></h3>
+  </div>
+
+  <hr>
+
+  <div id="posData">
+    <h3><b>Positions</b></h3>
+  </div>
+
+  <br>
+
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/implAPi.js"></script>
+
+</html>
