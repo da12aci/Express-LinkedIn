@@ -28,6 +28,14 @@ app.get('/oauth/linkedin/callback', function(req, res){
     });
 });
 
+/* GET home page. */
+app.get('/', function(req, res, next) {
+  console.log(req.session.data);
+  res.render('view', { 
+      title: 'Personal Website Generator'
+    });
+});
+
 //posts an object of the Linkedin data and uses a session to get the access token
 app.post("/get-profile", (req,res) => {
     if (req.session.accessToken){
@@ -43,14 +51,6 @@ app.post("/get-profile", (req,res) => {
         res.send("Nothing");
     }
 
-});
-
-/* GET home page. */
-app.get('/', function(req, res, next) {
-  console.log(req.session.data);
-  res.render('view', { 
-      title: 'Personal Website Generator'
-    });
 });
 
 
